@@ -1,11 +1,18 @@
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Rewrite;
 
 var builder = WebApplication.CreateBuilder(args); //"WebApplication" Provides apis to configure and host
 
 var app = builder.Build(); //builds api
 
-app.UseRewriter(new RewriteOptions().AddRedirect("tasks/(.*)", "todos/"));
-
+app.UseRewriter(new RewriteOptions().AddRedirect("tasks/(.*)", "todos/$1"));
+// app.Use(async (context, next) =>
+// {
+//     Console.WriteLine($"[{contextRequest.Method} {context.Request.Path}]");
+//     await next(context);
+//     Console.WriteLine($"[{context.Request.Method} {context.Request.Path}]");
+// });
 
 var todos = new List<Todo>();
 // ------------------------------------------------------------------

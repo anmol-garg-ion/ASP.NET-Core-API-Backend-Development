@@ -5,7 +5,7 @@ POST http://localhost:5038/todos
 Content-Type: application/json
 
 {
-    "id": 2,
+    "id": 1,
     "name": "Ananeya K",
     "dueDate": "2023-04-12",
     "isCompleted": true
