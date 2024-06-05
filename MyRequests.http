@@ -1,0 +1,18 @@
+GET http://localhost:5038/todos
+
+###
+POST http://localhost:5038/todos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Ananeya K",
+    "dueDate": "2023-04-12",
+    "isCompleted": true
+}
+
+###
+GET http://localhost:5038/todos/3
+
+###
+DELETE http://localhost:5038/todos/1
