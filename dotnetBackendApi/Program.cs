@@ -4,6 +4,8 @@ var builder = WebApplication.CreateBuilder(args); //"WebApplication" Provides ap
 
 var app = builder.Build(); //builds api
 
+app.UseRewriter(new RewriteOptions().AddRedirect("tasks/(.*)", "todos/"));
+
 
 var todos = new List<Todo>();
 // ------------------------------------------------------------------

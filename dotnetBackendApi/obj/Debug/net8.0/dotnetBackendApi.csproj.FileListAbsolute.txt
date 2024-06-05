@@ -23,3 +23,4 @@ C:\ION_A_Mobile\dotnet\dotnetBackendApi\obj\Debug\net8.0\refint\dotnetBackendApi
 C:\ION_A_Mobile\dotnet\dotnetBackendApi\obj\Debug\net8.0\dotnetBackendApi.pdb
 C:\ION_A_Mobile\dotnet\dotnetBackendApi\obj\Debug\net8.0\dotnetBackendApi.genruntimeconfig.cache
 C:\ION_A_Mobile\dotnet\dotnetBackendApi\obj\Debug\net8.0\ref\dotnetBackendApi.dll
+C:\ION_A_Mobile\dotnet\dotnetBackendApi\obj\Debug\net8.0\dotnetBackendApi.sourcelink.json
